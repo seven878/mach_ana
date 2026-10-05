@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机加工订单管理系统</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="layout">
+
+        <!-- ============ 左侧边栏 ============ -->
+        <aside class="sidebar">
+            <div class="logo">机加工订单</div>
+            <nav class="menu">
+                <a href="#" class="menu-item active" data-view="customers">
+                    <span class="icon">👤</span> 客户
+                </a>
+                <a href="#" class="menu-item" data-view="orders">
+                    <span class="icon">📋</span> 订单
+                </a>
+                <a href="#" class="menu-item" data-view="items">
+                    <span class="icon">🔩</span> 订单 Item
+                </a>
+            </nav>
+        </aside>
+
+        <!-- ============ 右侧主区域 ============ -->
+        <main class="main">
+            <header class="topbar">
+                <h1 id="page-title">客户</h1>
+                <button id="btn-add" class="btn btn-primary">+ 新增</button>
+            </header>
+
+            <section class="content">
+                <table class="data-table">
+                    <thead id="table-head">
+                        <!-- JS 动态填充 -->
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- JS 动态填充 -->
+                    </tbody>
+                </table>
+
+                <div id="empty-tip" class="empty-tip" style="display:none;">
+                    暂无数据
+                </div>
+
+                <div id="loading" class="loading" style="display:none;">
+                    加载中…
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="/static/modal.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
